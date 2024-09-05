@@ -29,6 +29,11 @@ canvas {
   max-width: 1120px;
 }
 
+main {
+  touch-action: pan-y;
+  overflow-y: auto;
+}
+
 @layer utilities {
   .flex-center {
     @apply flex items-center justify-center;
