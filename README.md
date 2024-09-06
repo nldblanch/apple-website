@@ -8,7 +8,7 @@
 <br />
 <div align="center">
 <h1>iPhone 15 Pro</h1>
-  <h2 align="center">Apple</h2>
+  <h2 align="center">Replica of Apple's product site</h2>
   <p align="center">
     <br />
     <a href="https://github.com/nldblanch/apple-website"><strong>Explore the docs »</strong></a>
