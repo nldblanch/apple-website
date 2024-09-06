@@ -14,7 +14,7 @@
     <a href="https://github.com/nldblanch/apple-website"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://nb-apple-website.netlify.app">View Demo</a>
+    <a href="https://nb-iphone-15-pro.netlify.app">View Demo</a>
     ·
     <a href="https://github.com/nldblanch/apple-website/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
