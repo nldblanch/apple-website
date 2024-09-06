@@ -22,6 +22,16 @@ const HowItWorks = () => {
       duration: 1,
       ease: "power2.inOut",
     });
+    gsap.to("#gameVideo", {
+      scrollTrigger: {
+        trigger: "#gameVideo",
+        toggleActions: "play reset reverse restart",
+        start: "0% bottom",
+      },
+      onComplete: () => {
+        videoRef.current.play()
+      }
+    });
   }, []);
   return (
     <section className="common-padding">
@@ -51,6 +61,7 @@ const HowItWorks = () => {
             </div>
             <div className="hiw-video">
               <video
+              id="gameVideo"
                 className="pointer-events-none"
                 playsInline
                 preload="none"

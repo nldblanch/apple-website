@@ -26,7 +26,7 @@ const VideoCarousel = () => {
   useGSAP(() => {
     gsap.to("#slider", {
       transform: `translateX(${-100 * videoId}%)`,
-      duration: 2,
+      duration: 1,
       ease: "power2.inOut",
     });
     gsap.to("#video", {
@@ -145,7 +145,7 @@ const VideoCarousel = () => {
         return video;
     }
   };
-
+  
   return (
     <>
       <div className="flex items-center">
@@ -158,6 +158,7 @@ const VideoCarousel = () => {
                   playsInline={true}
                   preload="auto"
                   muted
+                  
                   className={`${list.id === 2 && "translate-x-44"} pointer-events-none`}
                   ref={(el) => (videoRef.current[i] = el)}
                   onEnded={() =>
@@ -172,6 +173,7 @@ const VideoCarousel = () => {
                     }));
                   }}
                   onLoadedMetadata={(e) => handleLoadedMetadata(i, e)}
+
                 >
                   <source src={list.video} type="video/mp4" />
                 </video>
@@ -194,6 +196,12 @@ const VideoCarousel = () => {
               key={i}
               ref={(el) => (videoDivRef.current[i] = el)}
               className="mx-2 w-3 h-3 bg-gray-200 rounded-full relative cursor-pointer"
+              onClick={() => {
+                setVideo((prevVideo) => ({
+                  ...prevVideo,
+                  videoId: i,
+                }))
+              }}
             >
               <span
                 className="absolute h-full w-full rounded-full"

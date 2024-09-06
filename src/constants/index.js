@@ -40,7 +40,7 @@ import {
     },
     {
       id: 4,
-      textLists: ["All-new Action button.", "What will yours do?."],
+      textLists: ["All-new Action button.", "What will yours do?"],
       video: highlightFourthVideo,
       videoDuration: 3.63,
     },
